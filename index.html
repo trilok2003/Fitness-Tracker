@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="tittle">Fitness Tracker</h1>
+        <div id="workoutForm">
+            <div>
+                <label for="workout">Workout:</label>
+                <input type="text" id="workout" placeholder="Enter workout">
+            </div>
+            <div>
+                <label for="duration">Duration (min):</label>
+                <input type="number" id="duration" placeholder="Enter duration">
+            </div>
+            <button onclick="addWorkout()">Add Workout</button>
+            <div id="goalForm">
+                <label for="goal">Daily Goal (min):</label>
+                <input type="number" id="goal" placeholder="Set your daily goal">
+                <button onclick="setGoal()">Set Goal</button>
+            </div>
+        </div>
+        <!-- <div id="goalForm">
+            <label for="goal">Daily Goal (min):</label>
+            <input type="number" id="goal" placeholder="Set your daily goal">
+            <button onclick="setGoal()">Set Goal</button>
+        </div> -->
+        <div id="progress">
+            <h2>Progress: </h2>
+            <p>Total Duration: <span id="totalDuration">0</span> min</p>
+            <p>Daily Goal: <span id="dailyGoal">Not set</span> min</p>
+        </div>
+        <div id="workoutList">
+            <h2>Workout History: </h2>
+            <ul id="workouts"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
